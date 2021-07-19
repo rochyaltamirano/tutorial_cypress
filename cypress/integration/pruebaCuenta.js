@@ -2,7 +2,7 @@ describe('Cuenta', function(){
     var a= 1;
 
     it ('Vamos a ver una igualdad', function(){
-        expect(1==1).to.equal(true);
+        expect(1==1, "Ambos términos deberían ser igual, y no lo son").to.equal(true);
     })
 
     it('Vamos a ver que no es una igualdad', function(){
