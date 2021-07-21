@@ -21,6 +21,7 @@ describe ('Search test cases', function(){
 
     it ('Search dresses', function(){
         indexPage.search('dress');
+        cy.logSpectFormat('Searching for dresses');
         articlesPage.verifyArticle('"dress"');
     })
 
